@@ -33,8 +33,13 @@ function writePassword() {
     var useSymbols = confirm("Do you want special characters?");
     console.log('symbols', useSymbols);
 
-    var password = generatePassword(passwordLength, useLowerCase, useUpperCase, useNumbers, useSymbols);
-    document.getElementById("password").innerHTML = password;
+    if (useLowerCase || useUpperCase || useNumbers || useSymbols) {
+        var password = generatePassword(passwordLength, useLowerCase, useUpperCase, useNumbers, useSymbols);
+        document.getElementById("password").innerHTML = password;
+    }
+    else {
+        alert("You must choose at least 1 character class for password generation");
+    }
 }
 
 function generatePassword(passwordLength, useLowerCase, useUpperCase, useNumbers, useSymbols) {
