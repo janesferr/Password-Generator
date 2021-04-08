@@ -1,6 +1,6 @@
 This app will run in the browser and will feature dynamically updated HTML and CSS powered by Javascript code that I have writen.  This has a clean and polished, responsive user interfacet that adapts to multiple screen sizes.  The password can include special characters which an employee with access to sensitive data can randomly generate a password that meets certain criteria which creates a strong password that provides greater security.  
 
-##User information
+## User information
 
 ```
 GIVEN I need a new, secure password
